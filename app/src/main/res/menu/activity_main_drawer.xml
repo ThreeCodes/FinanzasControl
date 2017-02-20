@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/gasto"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Registrar Gasto" />
+        <item
+            android:id="@+id/ingreso"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Registrar Ingreso" />
+        <item
+            android:id="@+id/hgastos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Historial de Gastos" />
+        <item
+            android:id="@+id/hingresos"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Historial de Ingresos" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

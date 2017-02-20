@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_cuenta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.threecodes.finanzascontrol.CuentaActivity">
+
+    <TextView
+        android:text="Ingresar Saldo Inicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editTextSaldoInicial" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="100dp">
+
+        <Button
+            android:text="Guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGuardarC"
+            android:layout_weight="1"
+            android:onClick="GuardarCuenta" />
+
+        <Button
+            android:text="Eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEliminarC"
+            android:layout_weight="1"
+            android:onClick="EliminarCuenta"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Saldo Inicial:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSI"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="40dp"/>
+
+    <TextView
+        android:text="Fecha:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFecha"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:paddingBottom="50dp" />
+
+    <Button
+        android:text="Guardar Datos Como CSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="gCSV"/>
+
+</LinearLayout>

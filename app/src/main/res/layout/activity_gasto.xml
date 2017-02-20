@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_gasto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.threecodes.finanzascontrol.GastoActivity"
+    android:paddingLeft="10dp">
+
+    <TextView
+        android:text="Descripción"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_gDesc"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_gDesc" />
+
+    <TextView
+        android:text="Cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_gP"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText_gCant" />
+
+    <TextView
+        android:text="Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_gF"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date|time"
+        android:ems="10"
+        android:id="@+id/editText_gFecha" />
+
+    <TextView
+        android:text="Localidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_gL"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text|textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_gLoc" />
+
+    <TextView
+        android:text="Teléfono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView_gT" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText_gTel" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Agregar Ubicación"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_SLoc"
+            android:layout_weight="1"
+            android:onClick="setUB" />
+
+        <Button
+            android:text="Editar"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Coordenadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView_gUB"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Guardar Gasto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="inGasto" />
+
+</LinearLayout>
