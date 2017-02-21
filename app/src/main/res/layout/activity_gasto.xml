@@ -5,8 +5,7 @@
     android:id="@+id/activity_gasto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.threecodes.finanzascontrol.GastoActivity"
-    android:paddingLeft="10dp">
+    tools:context="com.threecodes.finanzascontrol.GastoActivity">
 
     <TextView
         android:text="Descripción"
